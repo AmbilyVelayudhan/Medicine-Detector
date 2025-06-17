@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 
-# Load dataset
+
 @st.cache_data
 def load_data():
     file_path = "A_Z_medicines_dataset_with_usage.csv"
@@ -10,7 +10,7 @@ def load_data():
 
 df = load_data()
 
-# Sidebar
+
 st.sidebar.image("https://cdn-icons-png.flaticon.com/512/609/609091.png", width=100)  # Medicine icon
 st.sidebar.title("💊 Medicine Finder")
 st.sidebar.write("🔍 Search for medicines and get their usage details instantly.")
@@ -18,7 +18,7 @@ st.sidebar.markdown("---")
 st.sidebar.write("📌 **Data Source:** Medicine Database")
 st.sidebar.write("📅 **Entries:**", len(df))
 
-# Main UI
+
 st.markdown(
     """
     <style>
@@ -52,7 +52,7 @@ st.markdown(
 st.markdown('<p class="main-title">💊 Medicine Usage Lookup</p>', unsafe_allow_html=True)
 st.write("Search for a medicine to find its usage and details.")
 
-# Search input with autocomplete suggestions
+
 medicine_list = df["name"].dropna().unique()
 medicine_name = st.selectbox("Select or type medicine name:", [""] + list(medicine_list))
 
