@@ -11,7 +11,7 @@ def load_data():
 df = load_data()
 
 
-st.sidebar.image("https://cdn-icons-png.flaticon.com/512/609/609091.png", width=100)  # Medicine icon
+st.sidebar.image("https://cdn-icons-png.flaticon.com/512/609/609091.png", width=100)  
 st.sidebar.title("💊 Medicine Finder")
 st.sidebar.write("🔍 Search for medicines and get their usage details instantly.")
 st.sidebar.markdown("---")
