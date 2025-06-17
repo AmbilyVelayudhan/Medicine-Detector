@@ -35,6 +35,17 @@ This dataset serves as the knowledge base of the application.
 - Virtual Environment (`.venv`) – For dependency management
 
 
+
+ 📁 Folder Structure
+
+    Medicine Detection/
+    │
+    ├── app.py                         
+    ├── A_Z_medicines_dataset_with_usage.csv 
+    ├── requirements.txt            
+    └── .venv/   
+
+
  💻 Installation & Running the App
 
 1. Clone the repository:
@@ -56,14 +67,7 @@ This dataset serves as the knowledge base of the application.
    streamlit run app.py
 
 
- 📁 Folder Structure
-
-    Medicine Detection/
-    │
-    ├── app.py                         
-    ├── A_Z_medicines_dataset_with_usage.csv 
-    ├── requirements.txt            
-    └── .venv/                      
+                   
 
 
                       
